@@ -1,0 +1,169 @@
+* {
+    margin:0;
+    padding:0 ;
+    box-sizing:border-box ;
+}
+body{
+    background:#242525;
+    color: white;
+    padding: 14px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    gap: 14px;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:14px;
+}
+.catphoto{
+    max-width: 52px;
+    max-height: 52px;
+    border:2px solid darkblue;
+    border-radius: 100%;
+}
+
+nav, section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    
+}
+
+
+.greylink{
+    color:lightgray;
+}
+
+.whitelink{
+    color:white;
+}
+
+a{
+    text-decoration: unset;
+    font-size:0.8em;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+main {
+     flex: 1;
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 24px;
+     padding:0 14px;
+}
+
+.headertext{
+    font-size: 5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.iconbutton{
+    background: transparent;
+    border:none;
+    color: white;
+    font-size: 1.2em;
+}
+.iconbutton:hover{
+    cursor: pointer;
+}
+
+.searchbar {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 14px;
+    border:1px solid grey;
+    padding: 14px;
+    border-radius: 24px;
+
+}
+.searchbar:hover{
+    border-color: transparent;
+    background: darkgray;
+}
+
+input{
+    background: transparent;
+    outline: none;
+    border:unset;
+    color:white;
+    flex:1;
+}
+
+.iconbuttoncontainer{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.searchbuttonscontainer button{
+    padding:10px 14px;
+    border-radius: 4px;
+    background:#334155;
+    border:1px solid transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.searchbuttonscontainer{
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+}
+
+.searchbuttonscontainer button:hover{
+    border:1px solid darkgray;
+}
+.langaugeselection{
+    font-size:  0.9em;
+
+}
+.langaugeselection span{
+    color: rgb(88, 131, 172);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+footer > section{
+    padding:14px;
+}
+footer > section:last-child{
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    border-top: 1px solid rgb(105, 105, 105);
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footerlinks{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+
+.footerlinks a{
+    cursor: pointer;
+    
+}
+
+@media(min-width: 540px){
+    footer > section:last-child{
+        flex-direction: row;
+    }
+}
